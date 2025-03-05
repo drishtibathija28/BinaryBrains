@@ -1,0 +1,1906 @@
+/* Import Google Fonts (updated to include only Poppins) */
+/* <link rel="preconnect" href="https://fonts.googleapis.com"> */
+/* <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> */
+/* <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet"> */
+
+/* General Reset - Set Poppins as the universal font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif; /* Universal font */
+  font-weight: 400; /* Default weight for body text */
+  font-style: normal; /* Normal style */
+}
+
+/* Headings - Use Poppins with lighter weight */
+h1, h2, h3 {
+  font-family: "Poppins", sans-serif; /* Same font as everything else */
+  font-weight: 300; /* Lighter weight for headings */
+}
+
+/* Body */
+body {
+  background-color: #ffffff;
+  color: #000000;
+  line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(75, 85, 99, 0.3)),
+    url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 6rem 2rem 2rem 2rem;
+}
+
+.hero-content {
+  max-width: 900px;
+  animation: fadeIn 1s ease-out;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.hero-button {
+  background: linear-gradient(to right, #000000, #4b5563);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700; /* Bold for buttons */
+  padding: 1rem 3rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hero-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Features Section */
+.features {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+}
+
+.features h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #000000;
+  letter-spacing: 1.5px;
+  animation: fadeIn 1s ease-out;
+}
+
+.features-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.feature-item {
+  flex: 1 1 300px;
+  padding: 2rem;
+  background: linear-gradient(to bottom, #ffffff, #d1d5db);
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+}
+
+.benefits h2 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #000000;
+  letter-spacing: 1.5px;
+  animation: fadeIn 1s ease-out;
+}
+
+.benefits-list {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  text-align: center;
+}
+
+.benefits-list p {
+  font-size: 1.2rem;
+  color: #000000;
+  padding: 1rem;
+  background: linear-gradient(to right, #ffffff, #d1d5db);
+  border: 1px solid #4b5563;
+  border-radius: 5px;
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+/* CTA Section */
+.cta {
+  padding: 5rem 2rem;
+  background: linear-gradient(to right, #000000, #4b5563);
+  color: #ffffff;
+  text-align: center;
+}
+
+.cta h2 {
+  font-size: 2.25rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 1.5px;
+  animation: fadeIn 1s ease-out;
+}
+
+.cta p {
+  font-size: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.cta-button {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 700; /* Bold for buttons */
+  padding: 1rem 3rem;
+  border: 2px solid #000000;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Footer - Now uses Poppins */
+.footer {
+  padding: 4rem 2rem;
+  background: linear-gradient(to bottom, #000000, #4b5563);
+  color: #ffffff;
+  font-family: "Poppins", sans-serif; /* Updated to match everything else */
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.footer-brand h3 {
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  animation: fadeIn 1s ease-out;
+}
+
+.footer-brand p {
+  font-size: 1rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+.footer-nav {
+  display: flex;
+  gap: 3rem;
+}
+
+.footer-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold for emphasis */
+  transition: color 0.3s ease;
+}
+
+.footer-nav a:hover {
+  color: #d1d5db;
+}
+
+.footer-social {
+  display: flex;
+  gap: 2rem;
+}
+
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold for emphasis */
+  transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+  color: #d1d5db;
+}
+
+.footer-copyright {
+  font-size: 0.9rem;
+  opacity: 0.7;
+  margin-top: 2rem;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+@media (min-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: linear-gradient(to right, #ffffff, #d1d5db);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  font-weight: 700; /* Bold for brand */
+  letter-spacing: 1.5px;
+}
+
+/* Specific styling for OfficeOwl text - Now uses Poppins */
+.playwrite-it-moderna-officeowl {
+  font-family: "Poppins", sans-serif; /* Updated to match everything else */
+  font-weight: 300; /* Keep lighter weight for consistency with headings */
+  text-transform: none; /* Ensure no uppercase transformation */
+}
+
+.navbar-logo {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-logo:hover {
+  color: #4b5563;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navbar-item {
+  position: relative;
+}
+
+.navbar-link {
+  color: #000000;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold for nav links */
+  transition: color 0.3s ease;
+}
+
+.navbar-link:hover {
+  color: #4b5563;
+}
+
+.navbar-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -6px;
+  left: 0;
+  background-color: #000000;
+  transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+  width: 100%;
+}
+
+.navbar-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.navbar-toggle-bar {
+  width: 30px;
+  height: 3px;
+  background-color: #000000;
+  transition: all 0.3s ease;
+}
+
+/* Logout Button */
+.logout-button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  color: #000000;
+  transition: color 0.3s ease;
+  font-weight: 700; /* Bold for consistency */
+}
+
+.logout-button:hover {
+  color: #4b5563;
+}
+
+.navbar-menu.active .logout-button {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+/* Mobile Menu */
+@media (max-width: 768px) {
+  .navbar-toggle {
+    display: flex;
+  }
+
+  .navbar-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: linear-gradient(to bottom, #ffffff, #d1d5db);
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 2rem 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .navbar-menu.active {
+    transform: translateY(0);
+  }
+
+  .navbar-link {
+    font-size: 1.2rem;
+  }
+
+  .navbar-toggle.active .navbar-toggle-bar:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .navbar-toggle.active .navbar-toggle-bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .navbar-toggle.active .navbar-toggle-bar:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+}
+
+/* Dashboard */
+.dashboard {
+  min-height: 100vh;
+  background-color: #ffffff;
+  padding-top: 6rem;
+}
+
+/* Admin Dashboard */
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Dashboard Header */
+.dashboard-header {
+  padding: 2rem;
+  text-align: center;
+  background: linear-gradient(to right, #000000, #4b5563);
+  color: #ffffff;
+  animation: fadeIn 1s ease-out;
+}
+
+.dashboard-header h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+}
+
+.dashboard-header p {
+  font-size: 1.2rem;
+  opacity: 0.8;
+  margin-top: 0.5rem;
+}
+
+/* Dashboard Metrics */
+.dashboard-metrics {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.metric-card {
+  flex: 1 1 200px;
+  padding: 1.5rem;
+  background: linear-gradient(to bottom, #ffffff, #d1d5db);
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  text-align: center;
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.metric-card h3 {
+  font-size: 1.5rem;
+  color: #000000;
+  margin-bottom: 0.5rem;
+}
+
+.metric-card p {
+  font-size: 2rem;
+  font-weight: 700; /* Bold for emphasis */
+  color: #000000;
+}
+
+/* Dashboard Graphs */
+.dashboard-graphs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+  padding: 2rem;
+  background-color: #ffffff;
+}
+
+.graph-container {
+  flex: 1 1 300px;
+  text-align: center;
+}
+
+.graph-container h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+.pie-chart {
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.pie-segment {
+  transition: d 1s ease-out;
+}
+
+.bar-chart {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.bar-segment {
+  transition: height 1s ease-out, y 1s ease-out;
+}
+
+/* Dashboard Pie Chart */
+.dashboard-pie-chart {
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #4b5563;
+  animation: fadeIn 1s ease-out;
+}
+
+.dashboard-pie-chart h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  letter-spacing: 1.5px;
+}
+
+/* Dashboard Content */
+.dashboard-content {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .dashboard-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Dashboard Section */
+.dashboard-section {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #ffffff, #d1d5db);
+  border: 1px solid #4b5563;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.dashboard-section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.dashboard-section h2 {
+  font-size: 1.75rem;
+  margin-bottom: 1.5rem;
+  color: #000000;
+}
+
+/* Leave Requests Section */
+.leave-requests table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.leave-requests th,
+.leave-requests td {
+  padding: 1rem;
+  border-bottom: 1px solid #4b5563;
+  text-align: left;
+  color: #000000;
+}
+
+.leave-requests th {
+  background: linear-gradient(to right, #000000, #4b5563);
+  color: #ffffff;
+  font-weight: 700; /* Bold for table headers */
+}
+
+.leave-requests a {
+  color: #000000;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.leave-requests a:hover {
+  color: #4b5563;
+}
+
+.leave-requests .dashboard-button {
+  margin-right: 0.5rem;
+}
+
+/* Attendance Section */
+.attendance-info {
+  font-size: 1.1rem;
+}
+
+.attendance-info .status {
+  font-weight: 700; /* Bold for emphasis */
+}
+
+.attendance-info p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+/* Leave Request Form */
+.leave-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.leave-form label {
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold for labels */
+  color: #000000;
+}
+
+.leave-form input[type="text"],
+.leave-form input[type="file"] {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #4b5563;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.leave-form input[type="text"]:focus,
+.leave-form input[type="file"]:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.leave-status {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+/* Occupancy Visualization */
+.occupancy-visual {
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+.occupancy-bar {
+  margin: 1rem 0;
+  width: 100%;
+  height: 20px;
+  background-color: #ffffff;
+  border: 1px solid #4b5563;
+  border-radius: 5px;
+}
+
+.occupancy-fill {
+  height: 100%;
+  background: linear-gradient(to right, #000000, #4b5563);
+  border-radius: 5px;
+  transition: width 0.5s ease;
+}
+
+/* Reports Section */
+.reports-content ul {
+  list-style: none;
+  margin: 1rem 0;
+}
+
+.reports-content li {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #4b5563;
+}
+/* Generate Reports Section */
+.reports {
+  padding: 2rem;
+  background-color: #1a1a1a; /* Dark background */
+  border-radius: 8px;
+  margin: 20px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.reports h2 {
+  font-size: 1.75rem;
+  color: #000000; /* Black text for the heading */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.reports .input-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between input and button */
+  margin-bottom: 1rem;
+}
+
+.reports input[type="email"] {
+  flex: 1; /* Take up remaining space */
+  padding: 0.75rem 1rem 0.75rem 1rem; /* Top, Right, Bottom, Left padding */
+  font-size: 1rem;
+  border: 1px solid #4b5563;
+  border-radius: 5px;
+  background-color: #2d2d2d; /* Darker input background */
+  color: #ffffff; /* White text */
+  transition: border-color 0.3s ease;
+  margin-bottom: 10px; /* Bottom padding for the label box */
+  margin-right: 10px; /* Right padding for the label box */
+}
+
+.reports input[type="email"]:focus {
+  border-color: #ffffff; /* White border on focus */
+  outline: none;
+}
+
+.reports .dashboard-button {
+  background: linear-gradient(to right, #4b5563, #2d2d2d);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.reports .dashboard-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+}
+
+.reports .dashboard-button:disabled {
+  background: #666;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .reports {
+    padding: 1.5rem;
+  }
+
+  .reports h2 {
+    font-size: 1.5rem;
+  }
+
+  .reports .input-container {
+    flex-direction: column; /* Stack input and button on small screens */
+    gap: 0.5rem;
+  }
+
+  .reports input[type="email"] {
+    width: 100%; /* Full width on small screens */
+    font-size: 0.9rem;
+    padding: 0.5rem 0.75rem 0.5rem 0.75rem; /* Adjusted padding for small screens */
+    margin-bottom: 8px; /* Adjusted bottom padding for small screens */
+    margin-right: 0; /* Remove right padding on small screens */
+  }
+
+  .reports .dashboard-button {
+    width: 100%; /* Full width on small screens */
+    font-size: 0.9rem;
+    padding: 0.5rem 1.5rem;
+  }
+}
+
+/* Dashboard Button */
+.dashboard-button {
+  background: linear-gradient(to right, #000000, #4b5563);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700; /* Bold for buttons */
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.approve {
+  background: linear-gradient(to right, #000000, #4b5563);
+}
+
+.deny {
+  background: linear-gradient(to right, #4b5563, #d1d5db);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Logo Styling */
+.logo {
+  width: 48px;
+  height: 48px;
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.navbar-logo span {
+  font-size: 1.5rem;
+  vertical-align: middle;
+}
+
+.footer-brand .logo {
+  margin-right: 0.5rem;
+  vertical-align: middle;
+}
+
+.footer-brand .logo-text {
+  font-size: 2.5rem;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+  letter-spacing: 2px;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Auth Page */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff, #d1d5db);
+  padding: 2rem;
+}
+
+.auth-container {
+  background: #ffffff;
+  padding: 3rem;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  animation: slideUp 0.5s ease-out forwards;
+}
+
+.auth-container h1 {
+  font-size: 2.5rem;
+  color: #000000;
+  letter-spacing: 1.5px;
+  margin-bottom: 1rem;
+}
+
+.auth-subtitle {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 1.5rem;
+}
+
+.role-selection {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.role-option {
+  font-size: 1rem;
+  font-weight: 700; /* Bold for emphasis */
+  color: #000000;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.role-option input[type="radio"] {
+  width: 1.2rem;
+  height: 1.2rem;
+  accent-color: #000000;
+  cursor: pointer;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-group {
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 1rem;
+  font-weight: 700; /* Bold for labels */
+  color: #000000;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #4b5563;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #000000;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.auth-button {
+  background: linear-gradient(to right, #000000, #4b5563);
+  color: #ffffff;
+  font-size: 1.2rem;
+  font-weight: 700; /* Bold for buttons */
+  padding: 0.75rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.auth-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.auth-button:disabled {
+  background: #4b5563;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.auth-error {
+  color: #ff0000;
+  font-size: 0.9rem;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+}
+
+.auth-toggle {
+  font-size: 1rem;
+  color: #4b5563;
+  margin-top: 1.5rem;
+}
+
+.toggle-link {
+  color: #000000;
+  font-weight: 700; /* Bold for emphasis */
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.toggle-link:hover {
+  color: #4b5563;
+}
+
+/* Dashboard Pie Chart */
+.dashboard-pie-chart {
+  padding: 2rem;
+  background-color: #ffffff;
+  text-align: center;
+  border-bottom: 1px solid #4b5563;
+  animation: fadeIn 1s ease-out;
+}
+
+.dashboard-pie-chart h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #000000;
+  letter-spacing: 1.5px;
+}
+
+/* Attendance Section */
+.attendance-info {
+  font-size: 1.1rem;
+}
+
+.attendance-info .status {
+  font-weight: 700; /* Bold for emphasis */
+}
+
+.attendance-info p {
+  margin-bottom: 1rem;
+  color: #4b5563;
+}
+
+/* Leave Request Form */
+.leave-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.leave-form label {
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold for labels */
+  color: #000000;
+}
+
+.leave-form input[type="text"],
+.leave-form input[type="file"] {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #4b5563;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.leave-form input[type="text"]:focus,
+.leave-form input[type="file"]:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.leave-status {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  color: #4b5563;
+}
+
+/* Dashboard Button */
+.dashboard-button {
+  background: linear-gradient(to right, #000000, #4b5563);
+  color: #ffffff;
+  font-size: 1rem;
+  font-weight: 700; /* Bold for buttons */
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dashboard-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Contact Section */
+.contact {
+  padding: 6rem 2rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.contact h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1.5px;
+  margin-bottom: 2rem;
+  color: #000000;
+  animation: fadeIn 1s ease-out;
+}
+
+.contact-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-content p {
+  font-size: 1.2rem;
+  color: #4b5563;
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.contact-form .form-group {
+  text-align: left;
+}
+
+.contact-form label {
+  font-size: 1.1rem;
+  font-weight: 700; /* Bold for labels */
+  color: #000000;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #4b5563;
+  border-radius: 5px;
+  background-color: #ffffff;
+  color: #000000;
+  transition: border-color 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #000000;
+  outline: none;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+/* Existing General Reset remains unchanged */
+
+/* Adjust Body for Mobile */
+body {
+  font-size: 16px; /* Base font size for scalability */
+}
+
+/* Hero Section - Mobile Adjustments */
+@media (max-width: 768px) {
+  .hero {
+    height: 60vh; /* Reduced height for mobile */
+    padding: 4rem 1rem 1rem 1rem; /* Less padding */
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Smaller heading */
+    margin-bottom: 1rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem; /* Smaller paragraph */
+    margin-bottom: 1.5rem;
+  }
+
+  .hero-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 0.75rem 2rem; /* Smaller button */
+  }
+}
+
+/* Features Section - Mobile Adjustments */
+@media (max-width: 768px) {
+  .features {
+    padding: 4rem 1rem; /* Reduced padding */
+  }
+
+  .features h2 {
+    font-size: 2rem; /* Smaller heading */
+    margin-bottom: 2rem;
+  }
+
+  .features-container {
+    gap: 2rem; /* Reduced gap */
+  }
+
+  .feature-item {
+    flex: 1 1 100%; /* Full width on mobile */
+    padding: 1.5rem; /* Reduced padding */
+  }
+
+  .feature-item h3 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .feature-item p {
+    font-size: 0.9rem; /* Smaller text */
+  }
+}
+
+/* Benefits Section - Mobile Adjustments */
+@media (max-width: 768px) {
+  .benefits {
+    padding: 4rem 1rem; /* Reduced padding */
+  }
+
+  .benefits h2 {
+    font-size: 2rem; /* Smaller heading */
+    margin-bottom: 2rem;
+  }
+
+  .benefits-list p {
+    font-size: 1rem; /* Smaller text */
+    padding: 0.75rem; /* Reduced padding */
+  }
+}
+
+/* CTA Section - Mobile Adjustments */
+@media (max-width: 768px) {
+  .cta {
+    padding: 3rem 1rem; /* Reduced padding */
+  }
+
+  .cta h2 {
+    font-size: 1.75rem; /* Smaller heading */
+  }
+
+  .cta p {
+    font-size: 1rem; /* Smaller text */
+  }
+
+  .cta-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 0.75rem 2rem; /* Smaller button */
+  }
+}
+
+/* Footer - Mobile Adjustments */
+@media (max-width: 768px) {
+  .footer {
+    padding: 3rem 1rem; /* Reduced padding */
+  }
+
+  .footer-container {
+    gap: 2rem; /* Reduced gap */
+  }
+
+  .footer-brand h3 {
+    font-size: 2rem; /* Smaller heading */
+  }
+
+  .footer-nav {
+    flex-direction: column; /* Stack nav links */
+    gap: 1.5rem; /* Reduced gap */
+  }
+
+  .footer-social {
+    gap: 1.5rem; /* Reduced gap */
+  }
+
+  .footer-copyright {
+    font-size: 0.8rem; /* Smaller text */
+  }
+}
+
+/* Navbar - Mobile Adjustments (Your existing code is solid, just tweaking) */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 1rem 1rem; /* Reduced padding */
+  }
+
+  .navbar-brand {
+    font-size: 1.5rem; /* Smaller brand text */
+  }
+
+  .navbar-logo span {
+    font-size: 1.25rem; /* Smaller logo text */
+  }
+
+  .navbar-menu {
+    padding: 1.5rem 0; /* Adjusted padding */
+  }
+
+  .navbar-link {
+    font-size: 1rem; /* Smaller nav links */
+  }
+
+  .logo {
+    width: 36px; /* Smaller logo */
+    height: 36px;
+  }
+}
+
+/* Dashboard - Mobile Adjustments */
+@media (max-width: 768px) {
+  .dashboard {
+    padding-top: 4rem; /* Reduced top padding */
+  }
+
+  .dashboard-header h1 {
+    font-size: 2rem; /* Smaller heading */
+  }
+
+  .dashboard-header p {
+    font-size: 1rem; /* Smaller text */
+  }
+
+  .dashboard-metrics {
+    padding: 1rem; /* Reduced padding */
+    gap: 1.5rem; /* Reduced gap */
+  }
+
+  .metric-card {
+    flex: 1 1 100%; /* Full width on mobile */
+    padding: 1rem; /* Reduced padding */
+  }
+
+  .metric-card h3 {
+    font-size: 1.25rem; /* Smaller heading */
+  }
+
+  .metric-card p {
+    font-size: 1.75rem; /* Slightly smaller metric value */
+  }
+
+  .dashboard-graphs {
+    padding: 1rem; /* Reduced padding */
+    gap: 2rem; /* Reduced gap */
+  }
+
+  .graph-container h2 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+
+  .pie-chart {
+    max-width: 250px; /* Smaller chart */
+  }
+
+  .dashboard-content {
+    padding: 2rem 1rem; /* Reduced padding */
+    gap: 2rem; /* Reduced gap */
+    grid-template-columns: 1fr; /* Single column */
+  }
+
+  .dashboard-section {
+    padding: 1.5rem; /* Reduced padding */
+  }
+
+  .dashboard-section h2 {
+    font-size: 1.5rem; /* Smaller heading */
+  }
+}
+
+/* Leave Requests - Mobile Adjustments */
+@media (max-width: 768px) {
+  .leave-requests th,
+  .leave-requests td {
+    padding: 0.75rem; /* Reduced padding */
+    font-size: 0.9rem; /* Smaller text */
+  }
+
+  .leave-requests table {
+    display: block; /* Allow horizontal scrolling if needed */
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+}
+
+/* Forms - Mobile Adjustments */
+@media (max-width: 768px) {
+  .leave-form input[type="text"],
+  .leave-form input[type="file"] {
+    font-size: 0.9rem; /* Smaller input text */
+    padding: 0.5rem; /* Reduced padding */
+  }
+
+  .leave-form label {
+    font-size: 1rem; /* Smaller label */
+  }
+
+  .dashboard-button {
+    font-size: 0.9rem; /* Smaller button text */
+    padding: 0.5rem 1.5rem; /* Smaller button */
+  }
+}
+
+/* Auth Page - Mobile Adjustments */
+@media (max-width: 768px) {
+  .auth-page {
+    padding: 1rem; /* Reduced padding */
+  }
+
+  .auth-container {
+    padding: 2rem; /* Reduced padding */
+    max-width: 100%; /* Full width */
+  }
+
+  .auth-container h1 {
+    font-size: 2rem; /* Smaller heading */
+  }
+
+  .auth-subtitle {
+    font-size: 1rem; /* Smaller subtitle */
+  }
+
+  .role-selection {
+    flex-direction: column; /* Stack roles */
+    gap: 1rem; /* Reduced gap */
+  }
+
+  .auth-form {
+    gap: 1rem; /* Reduced gap */
+  }
+
+  .form-group input {
+    font-size: 0.9rem; /* Smaller input text */
+    padding: 0.5rem; /* Reduced padding */
+  }
+
+  .auth-button {
+    font-size: 1rem; /* Smaller button text */
+    padding: 0.5rem; /* Reduced padding */
+  }
+}
+
+/* Contact Section - Mobile Adjustments */
+@media (max-width: 768px) {
+  .contact {
+    padding: 4rem 1rem; /* Reduced padding */
+  }
+
+  .contact h1 {
+    font-size: 2rem; /* Smaller heading */
+    margin-bottom: 1.5rem;
+  }
+
+  .contact-content p {
+    font-size: 1rem; /* Smaller text */
+  }
+
+  .contact-form {
+    gap: 1rem; /* Reduced gap */
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 0.9rem; /* Smaller input text */
+    padding: 0.5rem; /* Reduced padding */
+  }
+
+  .contact-form label {
+    font-size: 1rem; /* Smaller label */
+  }
+}
+
+/* Ensure Small Screens (below 480px) */
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2rem; /* Even smaller heading */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Even smaller paragraph */
+  }
+
+  .features h2,
+  .benefits h2,
+  .cta h2,
+  .dashboard-header h1,
+  .dashboard-pie-chart h2,
+  .contact h1 {
+    font-size: 1.75rem; /* Smaller headings */
+  }
+
+  .navbar-brand {
+    font-size: 1.25rem; /* Smaller brand */
+  }
+
+  .navbar-logo span {
+    font-size: 1rem; /* Smaller logo text */
+  }
+
+  .logo {
+    width: 30px; /* Even smaller logo */
+    height: 30px;
+  }
+
+  .dashboard-metrics .metric-card p {
+    font-size: 1.5rem; /* Smaller metric value */
+  }
+}
+/* Footer Social Icons */
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1.5rem; /* Larger size for icons */
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.footer-social a:hover {
+  color: #d1d5db; /* Matches your existing hover color */
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+  .footer-social a {
+    font-size: 1.25rem; /* Slightly smaller icons on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-social a {
+    font-size: 1rem; /* Even smaller on very small screens */
+  }
+}
+/* Override react-toastify default styles */
+.Toastify__toast {
+  background-color: #1a1a1a; /* Dark black background */
+  color: #ffffff; /* White text for contrast */
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+}
+
+.Toastify__toast--info {
+  background-color: #333333; /* Slightly lighter black for info */
+}
+
+.Toastify__toast--success {
+  background-color: #2d2d2d; /* Medium black for success */
+}
+
+.Toastify__toast--error {
+  background-color: #4d4d4d; /* Lighter black for error */
+}
+
+.Toastify__toast--warning {
+  background-color: #404040; /* Another shade for warning */
+}
+
+.Toastify__progress-bar {
+  background-color: #000000; /* Pure black progress bar */
+}
+
+.Toastify__close-button {
+  color: #ffffff; /* White close button */
+}
+
+.Toastify__close-button:hover {
+  color: #cccccc; /* Light gray on hover */
+}
+.chatbot-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.chatbot-toggle-button {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  background-color: #2d2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s;
+}
+
+.chatbot-toggle-button:hover {
+  background-color: #4d4d4d;
+}
+
+.chatbot-logo {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.chatbot-label {
+  font-size: 12px;
+}
+
+.chatbot-container {
+  width: 300px;
+  height: 400px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.chat-header {
+  background-color: #2d2d2d;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-close-button {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.chat-close-button:hover {
+  color: #ccc;
+}
+
+.chat-messages {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.chat-welcome {
+  color: #666;
+  text-align: center;
+  padding: 20px;
+}
+
+.chat-message {
+  margin: 5px 0;
+  padding: 8px 12px;
+  border-radius: 4px;
+  max-width: 80%;
+  word-wrap: break-word;
+}
+
+.chat-message.user {
+  background-color: #2d2d2d;
+  color: #fff;
+  align-self: flex-end;
+  margin-left: auto;
+}
+
+.chat-message.bot {
+  background-color: #e0e0e0;
+  color: #333;
+  align-self: flex-start;
+}
+
+.chat-message.typing::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.chat-input-form {
+  display: flex;
+  padding: 10px;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input-form input {
+  flex: 1;
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 5px;
+}
+
+.chat-input-form button {
+  padding: 5px 10px;
+  background-color: #2d2d2d;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.chat-input-form button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+/* Updated styles for month-navigation */
+.month-navigation {
+  display: flex;
+  justify-content: center; /* Center the buttons horizontally */
+  gap: 20px; /* Space between buttons */
+  margin-top: 20px; /* Space at the top */
+  padding: 0 10px; /* Optional: horizontal padding for alignment */
+}
+
+/* Ensure buttons look consistent */
+.month-navigation .dashboard-button {
+  min-width: 120px; /* Optional: consistent width for buttons */
+}
+
+/* Hover effect (optional) */
+.month-navigation .dashboard-button:hover {
+  background-color: #4d4d4d;
+}
+
+/* Disabled state (optional) */
+.month-navigation .dashboard-button:disabled {
+  background-color: #666;
+  cursor: not-allowed;
+}
+* Pending Leave Requests Section */
+.leave-requests {
+  margin: 20px 0; /* Space above and below the section */
+}
+
+.leave-requests h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.leave-requests .requests-table {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  background-color: #fff; /* White background for the table container */
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.leave-requests table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; /* Fixed layout for consistent column widths */
+}
+
+.leave-requests th,
+.leave-requests td {
+  padding: 12px 15px; /* Increased padding for better spacing */
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0; /* Light gray border */
+}
+
+/* Header styling */
+.leave-requests th {
+  background-color: #f7f7f7; /* Light gray header background */
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+
+/* Row hover effect */
+.leave-requests tbody tr:hover {
+  background-color: #f9f9f9; /* Light gray on hover for readability */
+}
+
+/* ... (all other styles remain unchanged) */
+
+/* Pending Leave Requests Section */
+.leave-requests {
+  margin: 20px 0; /* Space above and below the section */
+}
+
+.leave-requests h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.leave-requests .requests-table {
+  width: 100%; /* Ensure full width of the container */
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0; /* Remove any default padding causing extra space */
+}
+
+/* Table styling */
+.leave-requests table {
+  width: 100%; /* Ensure table takes full width of .requests-table */
+  border-collapse: collapse;
+  table-layout: fixed; /* Fixed layout for consistent column widths */
+}
+
+/* Column widths */
+.leave-requests th:nth-child(1), .leave-requests td:nth-child(1) { /* Employee */
+  width: 27%; /* Increased from 25% to use more space */
+}
+
+.leave-requests th:nth-child(2), .leave-requests td:nth-child(2) { /* Reason */
+  width: 27%; /* Increased from 25% to use more space */
+}
+
+.leave-requests th:nth-child(3), .leave-requests td:nth-child(3) { /* PDF */
+  width: 15%; /* Kept the same to maintain button space */
+}
+
+.leave-requests th:nth-child(4), .leave-requests td:nth-child(4) { /* Actions */
+  width: 31%; /* Reduced from 35% to balance and reduce right space */
+}
+
+/* PDF cell styling */
+.leave-requests .pdf-cell {
+  word-wrap: break-word;
+  overflow-wrap: break-word; /* Wrap long filenames */
+  max-width: 0; /* Force wrapping within fixed width */
+  overflow: hidden; /* Prevent content from spilling */
+}
+
+/* Actions cell styling */
+.leave-requests .actions-cell {
+  display: flex;
+  justify-content: flex-start; /* Align buttons to the left */
+}
+
+.leave-requests .action-buttons {
+  display: flex;
+  flex-direction: row; /* Buttons side by side */
+  gap: 12px; /* Space between buttons */
+  justify-content: flex-start; /* Align buttons to the left within the cell */
+  margin-left: 0; /* No shift to keep buttons within column */
+}
+
+/* Button styling within actions */
+.leave-requests .action-buttons .dashboard-button {
+  padding: 10px 20px; /* Larger buttons */
+  min-width: 90px; /* Minimum width for consistency */
+  font-size: 14px;
+}
+
+/* No requests message */
+.leave-requests p {
+  padding: 20px;
+  text-align: center;
+  color: #666;
+  font-style: italic;
+}
+
+/* Ensure no horizontal scroll on the dashboard */
+.admin-dashboard {
+  overflow-x: hidden;
+  max-width: 100%;
+}
+
+.profile {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.profile-content p {
+  margin: 10px 0;
+}
+.profile-content strong {
+  color: #333;
+  margin-right: 10px;
+}
+/* ... (rest of the styles remain unchanged) */
+
+.bar-segment {
+  transition: height 0.5s ease-in-out;
+}
